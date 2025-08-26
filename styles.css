@@ -89,6 +89,8 @@ html, body {
 }
 
 .answer {
+    font-size: 40px;
+    color: #e7b781;
     display: flex;
     flex-direction: column;
     justify-content: center;

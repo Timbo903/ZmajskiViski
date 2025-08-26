@@ -1,8 +1,9 @@
 let output = document.getElementById("output")
-let happy = document.getElementsByClassName("happy")[0]
-let sad = document.getElementsByClassName("sad")[0]
-let reserved = document.getElementsByClassName("reserved")[0]
-let zvij = document.getElementsByClassName("zvij")[0]
+let anze = document.getElementsByClassName("anze")[0]
+let filip = document.getElementsByClassName("filip")[0]
+let lara = document.getElementsByClassName("lara")[0]
+let lojz = document.getElementsByClassName("lojz")[0]
+let trump = document.getElementsByClassName("trump")[0]
 let video = document.getElementById("confeti")
 const sound = document.getElementById("soundEffect")
 
@@ -40,8 +41,8 @@ function checkName(name) {
     if (name === '') {
         output.innerText = 'Vnesi ime!'
     } else {
-        if (name === "blaž" || name === "blaz" || name === "mihevc") {
-            output.innerText = `Zaznan lovec lignjunov. Ti ne piješ! \n \n Sej ne😂 \n Spij ${ran} ${shots}!🥃`
+        if (name === "lara" || name === "lara vošnjak" || name === "lara vosnjak") {
+            output.innerText = `Lara, spij ${ran} ${shots}!🥃`
             sad.style.display = "flex"
             happy.style.display = "none"
             reserved.style.display = "none"
@@ -51,8 +52,8 @@ function checkName(name) {
             sound.currentTime = 0;
             sound.play()
         }
-        else if(name === "jurij" || name === "jurc" || name === "jurč") {
-            output.innerText = "Jurč ti praznuješ tk da spij 6 shotov!🥃"
+        else if(name === "filip" || name === "flikaš flir") {
+            output.innerText = "Filip ti si šefe tk da spij 6 shotov!🥃"
             sad.style.display = "none"
             happy.style.display = "none"
             zvij.style.display = "none"
