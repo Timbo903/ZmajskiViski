@@ -22,7 +22,7 @@ html, body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #dfb47f;
+    background-color: #d1aa70;
     justify-content: center;
 }
 
@@ -196,6 +196,6 @@ html, body {
 .separate {
     text-align: center;
     padding: 30px;
-    color: rgb(230, 224, 220);
-    background-color: rgb(99, 74, 38);
+    color: rgb(175, 143, 114);
+    background-color: rgb(82, 48, 28);
 }

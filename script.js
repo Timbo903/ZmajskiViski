@@ -105,7 +105,7 @@ function checkName(name) {
 
         else if(name === "lara"){
             name = name.charAt(0).toUpperCase() + name.slice(1)
-            output.innerText = `Nevem kera Lara si tk, da spi 1 shot pa probi še enkrat.\nBodi bolj specifična!😵`
+            output.innerText = `Nevem kera Lara si, tk da spi 1 shot pa probi še enkrat.\nBodi bolj specifična!😵`
             output2.innerText = "Pa Bastl tut spije en shot k je že lih na sliki."
             showEmoji(lara)
             video.currentTime = 0;
