@@ -1,5 +1,6 @@
 let output = document.getElementById("output")
 let output2 = document.getElementById("output2")
+let galerija = document.getElementById("galerija")
 
 let anze = document.getElementsByClassName("anze")[0]
 let filip = document.getElementsByClassName("filip")[0]
@@ -17,10 +18,11 @@ let nika = document.getElementsByClassName("nika")[0]
 let tadej = document.getElementsByClassName("tadej")[0]
 let bastl = document.getElementsByClassName("bastl")[0]
 let tjasa = document.getElementsByClassName("tjasa")[0]
+let klemen = document.getElementsByClassName("klemen")[0]
 
 let video = document.getElementById("confeti")
 const sound = document.getElementById("soundEffect")
-const emojis = [filip, lara, anze, lojz, laraK, laraV, gabi, nejc, ana, spela, timbo, nika, trump, tadej, bastl, tjasa];
+const emojis = [filip, lara, anze, lojz, laraK, laraV, gabi, nejc, ana, spela, timbo, nika, trump, tadej, bastl, tjasa, klemen];
 
 
 function handleSubmit(event) {
@@ -66,7 +68,7 @@ function checkName(name) {
             sound.play()
         }
         else if(name === "filip" || name === "filipe") {
-            output.innerText = "Filip ti si šefe tk da spij 4 shote!🥃"
+            output.innerText = "Filip ti si šefe tk da spij 3 shote!🥃"
             showEmoji(filip)
             video.currentTime = 0;
             video.play()
@@ -105,7 +107,7 @@ function checkName(name) {
 
         else if(name === "lara"){
             name = name.charAt(0).toUpperCase() + name.slice(1)
-            output.innerText = `Nevem kera Lara si, tk da spi 1 shot pa probi še enkrat.\nBodi bolj specifična!😵`
+            output.innerText = `Nevem kera Lara si, tk da spij 1 shot pa probi še enkrat.\nBodi bolj specifična!😵`
             output2.innerText = "Pa Bastl tut spije en shot k je že lih na sliki."
             showEmoji(lara)
             video.currentTime = 0;
@@ -214,13 +216,15 @@ function checkName(name) {
             sound.play()
         }
 
-
-
-
-
-
-
-
+        else if(name === "klemen" || name === "finkšt" || name === "finkst"){
+            name = name.charAt(0).toUpperCase() + name.slice(1)
+            output.innerText = `Klemen, spij ${ran} ${shots}🥃\n pa neki nam zapoj!`;
+            showEmoji(klemen);
+            video.currentTime = 0;
+            video.play()
+            sound.currentTime = 0;
+            sound.play()
+        }
 
 
 
@@ -235,4 +239,3 @@ function checkName(name) {
         }
     }
 }
-    

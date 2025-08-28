@@ -50,7 +50,7 @@ html, body {
     padding-top: 150px;
     margin: 0;
     width: 100%;
-    height: 100vh;
+    height: 750px;
     overflow: hidden;
 }
 
@@ -114,8 +114,8 @@ html, body {
 }
 
 .emoji {
-    height: 150px;
-    width: 120px;
+    height: 200px;
+    width: fit-content;
     border-radius: 30px;
     margin: 20px;
     border: 3px solid rgb(173, 111, 59);
@@ -125,7 +125,6 @@ html, body {
 
 .filip {
     display: none;
-    width: fit-content;
 }
 
 .anze {
@@ -153,11 +152,9 @@ html, body {
 }
 .lara {
     display: none;
-    width: fit-content;
 }
 .laraV {
     display: none;
-    width: fit-content;
 }
 .laraK {
     display: none;
@@ -179,7 +176,9 @@ html, body {
 }
 .timbo {
     display: none;
-    width: fit-content;
+}
+.klemen {
+    display: none;
 }
 
 .confeti {
