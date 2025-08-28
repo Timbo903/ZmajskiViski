@@ -26,7 +26,7 @@ const emojis = [filip, lara, anze, lojz, laraK, laraV, gabi, nejc, ana, spela, t
 function handleSubmit(event) {
     event.preventDefault();
     let name = document.getElementsByClassName("input")[0].value;
-    console.log(name)
+    output2.innerText = "";
     checkName(name)
 }
 
